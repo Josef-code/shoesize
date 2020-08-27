@@ -15,15 +15,6 @@
         </div>
             <hr/>
         <div class="content">
-            loading...
-        </div>
-    </div>
-        <script>
-            $(".formarea").click(function(){
-               $(".content").html("");
-            })
-        </script>
-
                         <form action="results.php" method="POST">
                             <label for="name"><h3>Your name:</h3></label>
                             <input type="text" id="username" name="name" placeholder="John Kanu"\>
@@ -40,6 +31,15 @@
 
                             <input type="submit" value="submit">
                         </form>
+        </div>
+    </div>
+        <script>
+            $(".formarea").click(function(){
+               $(".content").hide();
+            })
+        </script>
+
+
 </body>
 </html>
                         
