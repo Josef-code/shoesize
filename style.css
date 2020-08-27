@@ -3,6 +3,10 @@ body{
     /* font-size: 2px; */
     background-color:  rgb(223, 221, 221);
 }
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
 .headholder{
     background-color: #f8f9fa;
     margin-top: 20px;
@@ -47,8 +51,10 @@ div {
 .formarea{
     background-color: #2b4ece;
     color: white;
+    font-size: 13px;
 }
 .helparea {
     background-color: #7c1e07;
     color: white;
+    font-size: 13px;
 }
