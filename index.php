@@ -16,7 +16,7 @@
             <hr/>
         <div id="content">
             <div class="form">
-                        <form action="results.php" method="POST">
+                        <form action="../shoesize/private/results.php" method="POST">
                             <label for="gender" name="gender"><h3>Gender</h3></label>
                             <select id="gender" name="gender">
                                 <option value="male">Male</option>
@@ -40,14 +40,14 @@
             $(".form").hide();
             $(".formarea").click(function(){
                 // $("#content").show();
-                $(".form").show();
-                $(".help").hide();
+                $(".form").fadeIn(1000);
+                $(".help").slideUp(2000);
             })
             $(".help").hide();
             $(".helparea").click(function(){
                 // $("#content").show();
-                $(".help").show();
-                $(".form").hide();
+                $(".help").fadeIn(1000);
+                $(".form").slideUp(2000);
             })
         </script>
 
