@@ -23,7 +23,7 @@
                                 <option value="female">Female</option>
                             </select>
 
-                            <label for="length" name="length"><h3>Length of Footin cm</h3></label>
+                            <label for="length" name="length"><h3>Length of Foot in cm</h3></label>
                             <input type="text" id="length" name="length" placeholder="Input your feet length in centimeters" required>
                             
 

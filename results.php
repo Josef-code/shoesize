@@ -8,13 +8,18 @@
         </div>
         </div> -->
         <div class="container headholder">
-        <?php 
-            $lengthcheck = $_POST['length'];
-            if (is_numeric($lengthcheck)) {
-                echo '<h1>CORRECT!</h1>';
-            } else {
-                echo '<div class="alert alert-danger" role="alert"><h3>Sorry system cannot validate your request. Please use a number instead</h3></div>';
+        <?php
+            function validation(){
+                $lengthcheck = $_POST['length'];
+                if (is_numeric($lengthcheck)) {
+                    echo '<h1>CORRECT!</h1>';
+                } else {
+                    echo '<div class="alert alert-danger" role="alert"><h3>Sorry system cannot validate your request. Please use a number instead</h3></div>';
+                }
             }
+            validation(); //check to validate if the user input is a number not a string
+
+           
         ?>
 
         </div>
