@@ -4,7 +4,7 @@ body{
     background-color:  rgb(223, 221, 221);
 }
 a:link, a:visited{
-    color: white;
+    color: #2b4ece;
     text-decoration: none;
 }
 .headholder{
@@ -47,6 +47,7 @@ div {
     display: flex;
     column-gap: 20%;
     padding-left: 50px;
+    align-items: center;
 }
 .formarea{
     background-color: #2b4ece;
