@@ -36,13 +36,14 @@
                     <li>To measure your feet stand on a level floor with the back of your heels against a straight edge or a wall</li>
                     <li>Remember to measure both feet, making a note of the longest feet</li>
                     <li>Measure your foot length by placing a ruler flat on the floor straight alongside the inside of your foot from your heal to your toes</li>
-                    <li>Place an object with a flat edge straight across your toes with the edge touching the tip of your longest toe. Take measurement ( in centimeters ) from the ruler where the flat edge crosses. This is your foot measurement.</li>
+                    <li>Take measurement ( in centimeters ) from the ruler where the flat edge crosses. This is your foot measurement.</li>
                     <li>If your foot measurement is halfway between sizez, select the larger size.</li>
                 </ol>
             </div>
         </div>
     </div>
         <script>
+        $(document).ready(function(){
             $(".form").hide();
             $(".formarea").click(function(){
                 // $("#content").show();
@@ -54,7 +55,9 @@
                 // $("#content").show();
                 $(".help").fadeIn(1000);
                 $(".form").fadeOut(1000);
-            })
+            });
+        });
+           
         </script>
 
 

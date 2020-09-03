@@ -46,7 +46,7 @@ div {
 .dbsection{
     display: flex;
     column-gap: 20%;
-    padding-left: 50px;
+    padding-left: auto;
     align-items: center;
 }
 .formarea{
