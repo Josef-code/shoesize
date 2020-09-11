@@ -16,23 +16,27 @@ a:link, a:visited{
     border-radius: 10px;
     box-shadow: 0 10px 10px -5px #7c1e07;
 }
+label {
+    margin-bottom: 1px;
+    display: inline;
+}
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: 70%;
+    padding: 7px 7px;
+    margin: 3px 0;
     display: inline-block;
     border: 1px solid #7c1e07;
     border-radius: 4px;
     box-sizing: border-box;
 }
 input[type=submit]{
-    width: 100%;
+    width: 70%;
     background-color: #7c1e07;
     color: white;
-    padding: 14px 20px;
+    padding: 7px 2px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 }
 input[type=submit]:hover{
@@ -46,20 +50,93 @@ div {
 .dbsection{
     display: flex;
     column-gap: 20%;
-    padding-left: auto;
+    padding-left: 50px;
     align-items: center;
 }
 .formarea{
     background-color: #2b4ece;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
+    border: none;
+    padding: 5px; 
+    border-radius: 3%;
+    transition-duration: 0.4s;
+}
+.formarea:hover{
+    background-color: white;
+    color: blue;
+    border: none;
 }
 .helparea {
     background-color: #7c1e07;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
+    border: none;
+    padding: 7px; 
+    border-radius: 3%;
+    transition-duration: 0.4s;
+}
+.helparea:hover{
+    background-color: white;
+    color: #7c1e07;
+    font-size: 15px;
+    border: none;
 }
 #desc{
     text-align: justify;
 }
+.msg{
+    align-items: center;
+}
 
+/*This section controls the loader on the page before the result appears*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #7c1e07;
+    border-radius: 50%;
+    border-top: 16px solid white;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/*End of loading section*/
